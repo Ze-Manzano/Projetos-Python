@@ -15,9 +15,10 @@ elif pagamento == 3:
 elif pagamento == 4:
     preco *= 0.85
 
-
+print("------ NOTA FISCAL ----")
 print("--- LOJA DE JOGOS CESUMAR ---")
-print(f"{nome}")
-print(f"{cpf}")
-print(f"{jogo}")
-print(f"{preco}")
+print(f"Nome: {nome}")
+print(f"CPF: {cpf}")
+print(f"Jogo: {jogo}")
+print(f"Valor final: {preco}")
+print("Muito obrigado(a) por comprar em nossa loja!")
