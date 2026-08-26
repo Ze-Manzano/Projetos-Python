@@ -10,7 +10,7 @@ if cadastro == "N" or cadastro == "n":
     loginc = str(input("Digite seu login: "))
     senhac = str(input("Digite sua senha: "))
     vsenhac = str(input("Digite sua senha novamente: "))
-
+    usuario = loginc
 
 elif senha == verificacao:
     print("\nSeu seu login foi efetuado com sucesso!")
@@ -69,5 +69,5 @@ fiscal =str(input("Deseja imprimir sua nota fiscal? (S/N): "))
 
 if fiscal =="S" or fiscal =="s":
     print("----- NOTA FISCAL -----")
-    print(f"Cliente {usuario or loginc}")
+    print(f"Cliente {usuario}")
     print(f"Valor do produto: {valor_finalp}")
