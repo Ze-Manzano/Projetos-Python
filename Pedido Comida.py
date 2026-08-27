@@ -36,22 +36,31 @@ else:
 
 pedido = str(input("Digite o número associado do item que deseja: "))
 if pedido == "1":
+    pedido = "X-Calabresa"
     valor = 25
 elif pedido == "2":
+    pedido = "X-Salada"
     valor = 15
 elif pedido == "3":
+    pedido = "X-Bacon"
     valor = 23
 elif pedido == "4":
+    pedido = "X-Ovo"
     valor = 18
 elif pedido == "5":
+    pedido = "X-Frango"
     valor = 27
 elif pedido == "6":
+    pedido = "Refrigerante Lata"
     valor = 8
 elif pedido == "7":
+    pedido = "Suco de Laranja"
     valor = 12
 elif pedido == "8":
+    pedido = "Cerveja Long Neck"
     valor = 15
 elif pedido == "9":
+    pedido = "Cerveja 600 ml"
     valor = 20
 
 quantidade =int(input("Digite a quantidade que deseja de cada item: "))
@@ -60,14 +69,20 @@ valor_finalp = valor * quantidade
 print(f"O valor do seu pedido é de R$ {valor_finalp}")
 pagamento=int(input("Digite sua forma de pagamento: Se for a vista, digite 1; Se for parcelado, digite 2: "))
 if pagamento == 1:
+    pagamento = "À vista"
     valor_finalp *= 0.9
-
+else:
+    pagamento = "Parcelado"
 
 print(f"Seu preço final é de R$ {valor_finalp}")
 print("\nMUITO OBRIGADO POR PEDIR NA HAMBURGURIA MANZANO")
 fiscal =str(input("Deseja imprimir sua nota fiscal? (S/N): "))
 
 if fiscal =="S" or fiscal =="s":
-    print("----- NOTA FISCAL -----")
-    print(f"Cliente {usuario}")
-    print(f"Valor do produto: {valor_finalp}")
+    print("--------- NOTA FISCAL ---------")
+    print(f"--- Cliente: {usuario} ---")
+    print(f"--- Pedido: {pedido} ---")
+    print(f"--- Quantidade: {quantidade} ---")
+    print(f"--- Forma de pagamento: {pagamento} ---")
+    print(f"--- Valor do produto: R$ {valor_finalp} ---")
+    print("-----------------------------------")
