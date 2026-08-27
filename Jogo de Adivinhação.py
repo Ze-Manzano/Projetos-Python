@@ -18,6 +18,6 @@ while True:
         print("Erado! Tente um valor MENOR!\n")
 
     else:
-        print(f"🎉PARABÉNS, VOCÊ ACERTOU🎉!")
+        print(f"\n🎉PARABÉNS, VOCÊ ACERTOU🎉!")
         print(f"Você acertou em {tentativas} tentativas!")
         break
