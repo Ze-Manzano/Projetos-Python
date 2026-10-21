@@ -36,3 +36,4 @@ print(f"Garantia: {garantia}")
 print(f"Valor do bem: {valor_do_bem}")
 print(f"Resultado: {resultado}")
 print("-------------------------------")
+
